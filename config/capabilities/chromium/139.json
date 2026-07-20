@@ -1,0 +1,22 @@
+{
+  "version": "139.0.0.0",
+  "features": {
+    "webgpu": {"supported": true, "experimental": true},
+    "fedcm": {"supported": true, "experimental": true},
+    "storage_buckets": {"supported": true, "experimental": true},
+    "private_network_access": {"supported": true},
+    "navigator_uadata": {"supported": true},
+    "pdf_viewer": {"supported": true},
+    "webgl2": {"supported": true},
+    "webgl_extensions": {"supported": true}
+  },
+  "apis": {
+    "storage": {"status": "stable"},
+    "permissions": {"status": "stable"},
+    "webgpu": {"status": "experimental"},
+    "fedcm": {"status": "experimental"},
+    "storage_buckets": {"status": "experimental"}
+  },
+  "deprecations": [],
+  "experimental": ["webgpu", "fedcm", "storage_buckets"]
+}

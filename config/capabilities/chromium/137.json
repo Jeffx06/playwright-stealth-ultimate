@@ -1,0 +1,20 @@
+{
+  "version": "137.0.0.0",
+  "features": {
+    "webgpu": false,
+    "fedcm": false,
+    "storage_buckets": true,
+    "private_network_access": true,
+    "navigator_uadata": true,
+    "pdf_viewer": true,
+    "webgl2": true,
+    "webgl_extensions": true
+  },
+  "apis": {
+    "storage": "stable",
+    "permissions": "stable",
+    "storage_buckets": "experimental"
+  },
+  "deprecations": [],
+  "experimental": ["storage_buckets"]
+}

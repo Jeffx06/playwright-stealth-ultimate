@@ -1,0 +1,136 @@
+site_name: Playwright Stealth Framework
+site_description: Framework anti-détection pour Playwright et Selenium
+site_author: Équipe Playwright Stealth
+repo_url: https://github.com/playwright-stealth/playwright-stealth
+repo_name: playwright-stealth/playwright-stealth
+copyright: Copyright &copy; 2026 Playwright Stealth Team
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+
+plugins:
+  - search:
+      lang:
+        - en
+        - fr
+      separator: '[\s\-]+'
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [..]
+          selection:
+            docstring_style: google
+            inherited_members: true
+            members: true
+            filters: ["!^_"]
+          rendering:
+            show_source: true
+            show_root_heading: true
+            show_root_toc_entry: false
+            show_object_full_path: false
+            show_signature_annotations: true
+            show_category_heading: true
+            heading_level: 2
+  - autorefs
+  - minify:
+      minify_html: true
+
+nav:
+  - Accueil: index.md
+  - Installation: installation.md
+  - Guides:
+      - Démarrage rapide: quickstart.md
+      - Configuration: configuration.md
+      - Utilisation: usage.md
+      - Migration: migration.md
+      - Dépannage: troubleshooting.md
+  - API Reference:
+      - Index: api/index.md
+      - Core: api/core.md
+      - Services: api/services.md
+      - Adapters: api/adapters.md
+      - Models: api/models.md
+      - Config: api/config.md
+  - Avancé:
+      - Fingerprinting: advanced/fingerprinting.md
+      - Profils personnalisés: advanced/custom_profiles.md
+      - Tests: advanced/testing.md
+      - Performance: advanced/performance.md
+      - Modules d'évasion: advanced/evasion_modules.md
+      - Benchmarks: advanced/benchmarking.md
+  - Référence:
+      - Changelog: reference/changelog.md
+      - Contributing: reference/contributing.md
+      - License: reference/license.md
+  - FAQ: faq.md
+
+extra:
+  version:
+    provider: mike
+    default: latest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/playwright-stealth/playwright-stealth
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/playwright-stealth
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X
+
+extra_javascript:
+  - javascripts/extra.js

@@ -1,0 +1,22 @@
+# config/policies/performance.yaml
+consistency: relaxed
+performance: high
+fallback: auto
+retry:
+  max: 2
+  delay: 0.5
+validation:
+  hardware: false
+  browser: false
+  locale: false
+  network: false
+  display: false
+modules:
+  require_all: false
+  allow_fallback: true
+injection:
+  verify_checksum: false
+  optimize: true
+cache:
+  enabled: true
+  ttl: 3600

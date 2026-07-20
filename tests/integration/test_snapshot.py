@@ -1,0 +1,1 @@
+def test_snapshot_placeholder():\n    assert True\n

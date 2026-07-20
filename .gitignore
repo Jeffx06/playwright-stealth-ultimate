@@ -1,0 +1,53 @@
+# Python / Environnements
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Build & Packages
+dist/
+build/
+*.egg-info/
+.eggs/
+*.egg
+*.whl
+*.tar.gz
+playwright_stealth.egg-info/
+
+# Tests & Quality
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# IDE & OS
+.DS_Store
+.vscode/
+.idea/
+
+# Logs & Données locales
+*.log
+benchmark_reports/
+scraped_data/
+profile_v1_migrated.json
+
+# Fichiers JSON (ignore tout sauf le dossier config)
+*.json
+!config/**/*.json
+
+# Sécurité & Identifiants
+.pypirc
+
+# Archives
+*.rar
+
+# Dossiers de build temporaires
+playwright_stealth-*/
+playwright_stealth_ultimate-*/

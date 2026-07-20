@@ -1,0 +1,1 @@
+def test_consistency_placeholder():\n    assert True\n

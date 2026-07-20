@@ -1,0 +1,19 @@
+# config/policies/strict.yaml
+consistency: strict
+performance: balanced
+fallback: none
+retry:
+  max: 1
+  delay: 0.5
+validation:
+  hardware: true
+  browser: true
+  locale: true
+  network: true
+  display: true
+modules:
+  require_all: true
+  allow_fallback: false
+injection:
+  verify_checksum: true
+  optimize: true

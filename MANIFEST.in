@@ -1,0 +1,30 @@
+# MANIFEST.in
+# Inclusion des fichiers dans le package
+
+# Documentation
+include README.md
+include LICENSE
+include CHANGELOG.md
+
+# Configuration
+include pyproject.toml
+include setup.py
+
+# Scripts JS (évasion)
+recursive-include playwright_stealth/js *.js
+
+# Configuration YAML/JSON
+recursive-include playwright_stealth/config *.yaml *.json
+
+# Fichiers de typage
+include playwright_stealth/py.typed
+
+# Exclure les fichiers inutiles
+exclude .gitignore
+exclude .pre-commit-config.yaml
+exclude .ruff.toml
+prune tests
+prune examples
+prune benchmark_reports
+prune docs
+prune .github

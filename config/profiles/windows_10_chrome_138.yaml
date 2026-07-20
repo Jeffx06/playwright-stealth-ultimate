@@ -1,0 +1,38 @@
+# config/profiles/windows_10_chrome_138.yaml
+id: windows_10_chrome_138
+hardware:
+  tier: medium
+  cpu: Intel Core i5-1135G7
+  cpu_cores: 4
+  ram: 8
+  gpu: Intel Iris Xe Graphics
+  gpu_vendor: Intel Inc.
+  gpu_renderer: ANGLE (Intel, Intel Iris Xe Graphics Direct3D11)
+  screen: [1920, 1080]
+  dpi: 1.0
+browser:
+  os: windows
+  version: 138.0.0.0
+  chrome_version: 138.0.0.0
+  platform: Win32
+  platform_version: 10.0.0
+  locale: en-US
+  languages: [en-US, en, fr-FR, fr]
+  timezone: America/New_York
+  user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+  accept_language: en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7
+  fonts: [Arial, Helvetica, Times New Roman, Courier New, Verdana, Georgia]
+modules:
+  enabled:
+    - webdriver
+    - chrome_runtime
+    - canvas
+    - audio
+    - intl
+    - webgl
+    - permissions
+    - user_agent_data
+    - pdf_viewer
+policies:
+  consistency: strict
+  performance: balanced

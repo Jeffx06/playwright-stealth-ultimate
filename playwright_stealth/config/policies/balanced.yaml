@@ -1,0 +1,19 @@
+# config/policies/balanced.yaml
+consistency: balanced
+performance: balanced
+fallback: auto
+retry:
+  max: 3
+  delay: 1.0
+validation:
+  hardware: true
+  browser: true
+  locale: true
+  network: false
+  display: false
+modules:
+  require_all: false
+  allow_fallback: true
+injection:
+  verify_checksum: true
+  optimize: true

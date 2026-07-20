@@ -1,0 +1,38 @@
+# config/profiles/macos_ventura_chrome_139.yaml
+id: macos_ventura_chrome_139
+hardware:
+  tier: high
+  cpu: Apple M2
+  cpu_cores: 8
+  ram: 16
+  gpu: Apple M2 GPU
+  gpu_vendor: Apple Inc.
+  gpu_renderer: ANGLE (Apple, Apple M2 GPU OpenGL)
+  screen: [2560, 1600]
+  dpi: 2.0
+browser:
+  os: macos
+  version: 139.0.0.0
+  chrome_version: 139.0.0.0
+  platform: MacIntel
+  platform_version: 10.15.7
+  locale: en-US
+  languages: [en-US, en, fr-FR, fr]
+  timezone: America/Los_Angeles
+  user_agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
+  accept_language: en-US,en;q=0.9,fr-FR;q=0.8,fr;q=0.7
+  fonts: [Helvetica, Arial, Times New Roman, Courier New, Verdana, Georgia]
+modules:
+  enabled:
+    - webdriver
+    - chrome_runtime
+    - canvas
+    - audio
+    - intl
+    - webgl
+    - permissions
+    - user_agent_data
+    - pdf_viewer
+policies:
+  consistency: strict
+  performance: balanced
